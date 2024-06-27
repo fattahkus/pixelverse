@@ -454,7 +454,7 @@ const upLevelPets = (query,petsId) =>
                   const tgId = detailsUser.telegramUserId
                   const getSecretIds = getSecretId(tgId);
                   var username = detailsUser.username
-                  const getUserAmount = (detailsUser.clicksCount)
+                  const getUserAmount = (detailsUser.clicksCount).toFixed(0)
                   // console.log(getSecretIds)
           
                           const getTaskLists = await getTaskList(query)
